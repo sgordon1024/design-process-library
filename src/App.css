@@ -1,22 +1,225 @@
-.App {
+/* ===================================== 
+   Page Styles
+======================================== */
+:root {
+  --darkBlue: #203548;
+  --teal: rgb(19, 224, 200);
+  --medBlue:  #1C77C3;
+  --medDarkBlue:  #174B7C;
+  --exLightBlue: #F5F8FA;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
   text-align: center;
+  margin: 0;
+  color: var(--darkBlue);
 }
 
-.App-logo {
-  height: 40vmin;
+h1 {
+  font-size: 2.5em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.process-p {
+  font-family: 'menlo', monospace;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  max-width: 320px;
+  letter-spacing: 1px;
+}
+
+.process-h {
+  text-transform: uppercase;
+  letter-spacing: 1px;;
+}
+
+
+.top {
+  display: grid;
+  padding: 0 1em 1em 1em;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  background-color: var(--exLightBlue);
+  padding-top: 50px;
+  padding-bottom: 127px;
+  grid-template-areas: 
+    "title"
+    "discovery" 
+    "concept" 
+    "sprints"
+}
+section {
+  margin-top: 3em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+
+.title {
+  grid-area: title;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 77px;
+}
+
+.discovery {
+  grid-area: discovery;
+}
+
+.concept {
+  grid-area: concept;
+}
+
+.sprints {
+  grid-area: sprints;
+}
+
+.pill {
+  height: 6px;
+  border-radius: 20px;
+  width: 80%;
+}
+
+.discovery-pill {
+  background-color: var(--medDarkBlue);
+}
+.concept-pill {
+  background-color: var(--teal);
+}
+.sprints-pill {
+  background-color: var(--medBlue);
+}
+
+.design-goals-btn {
+  transition: all .3s ease;
+  position: absolute;
+  font-weight: 800;
+  right: 20px;
+  top: 20px;
+  text-decoration: none;
+  background-color: var(--medBlue);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 30px;
+}
+
+.design-goals-btn:hover {
+  background-color: var(--medDarkBlue);
+}
+
+.team-members-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin-top: 1.5em;
+  text-align: left;
+}
+
+
+.team-member {
+  font-family: menlo, monospace;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-right: 35px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.team-member:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translate(-40px, -6px);
+  text-align: center;
+  width: 28px;
+  height: 28px;
+  border: solid black 2px;
+  border-radius: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+  content: "X";
+}
+
+
+.team-member.designers:before {
+  content: "D";
+}
+.team-member.engineers:before {
+  content: "E";
+}
+.team-member.test-engineers:before {
+  content: "T";
+}
+.team-member.content-strategy:before {
+  content: "C";
+}
+.team-member.requirements:before {
+  content: "R";
+}
+.team-member.strategy-research:before {
+  content: "S";
+}
+.team-member.insights:before {
+  content: "I";
+}
+.team-member.project-manager:before {
+  content: "P";
+}
+
+hr {
+  width: 90%;
+  margin-top: 60px;
+}
+
+
+
+
+/* ===================================== 
+   Media Queries
+======================================== */
+
+@media (min-width: 900px) {
+  .top {
+    grid-template-columns: .6fr 1fr 2fr;
+    grid-template-areas: 
+      "title title title"
+      "discovery concept sprints"
+  }
+  section {
+    margin-top: 0;
+  }
+  .pill {
+    margin-top: auto;
+    height: 40px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  h1 {
+    font-size: 3.3em;
+  }
+}
+
+
+@media (min-width: 600px) {
+  .team-members-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: 1.5em;
+  }
+  hr {
+    width: 80%;
+  }
+  
 }
