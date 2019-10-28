@@ -145,7 +145,7 @@ section {
   border: solid black 2px;
   border-radius: 16px;
   margin-right: 6px;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   content: "X";
 }
 
@@ -180,8 +180,51 @@ hr {
   margin-top: 60px;
 }
 
+.activity-wrapper {
+  margin: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  grid-gap: 2em;
+}
+
+.activity-wrapper .section-title {
+  grid-column: 1 / -1;
+}
+
+.activity {
+  padding: 1em;
+  text-align: left;
+}
 
 
+.discipline-icons {
+  padding: 4px 6px 4px 6px;
+  text-align: center;
+  display: inline;
+  border-radius: 100px;
+  font-weight: bold;
+  font-family: menlo, monospace;
+}
+
+.discipline-icons.discovery-phase {
+  background: var(--medDarkBlue)
+}
+.discipline-icons.concept-phase {
+  background: var(--teal);
+}
+.discipline-icons.sprint-phase {
+  background-color: var(--medBlue);
+}
+
+.discipline-icons span {
+  background: white;
+  margin-right: 6px;
+  border-radius: 100px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
 
 /* ===================================== 
    Media Queries
@@ -221,5 +264,12 @@ hr {
   hr {
     width: 80%;
   }
-  
+  .activity-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-items: start;
+    grid-gap: 2em;
+  }
 }
