@@ -257,12 +257,6 @@ the client.</p>
         <div class="discipline-icons sprint-phase">
           <span><abbr title="Designers">D</abbr></span>
           <span><abbr title="Engineers">E</abbr></span>
-          <span><abbr title="Test Engineers">T</abbr></span>
-          <span><abbr title="Content Strategists">C</abbr></span>
-          <span><abbr title="Requirements">R</abbr></span>
-          <span><abbr title="Strategists/Researchers">S</abbr></span>
-          <span><abbr title="Insights">I</abbr></span>
-          <span><abbr title="Porject Manager">P</abbr></span>
         </div>
         <h2>Prototyping</h2>
         <p>Prototyping the product can mean using Xcode to test native features, Principle to quickly validate interactions, Framer X to try complex interactions, Origami to use device hardware, or Invision. This stage is ongoing and has many uses. Ideally view the prototype on the device it’s built for.</p>
@@ -273,24 +267,15 @@ the client.</p>
           <span><abbr title="Engineers">E</abbr></span>
           <span><abbr title="Test Engineers">T</abbr></span>
           <span><abbr title="Content Strategists">C</abbr></span>
-          <span><abbr title="Requirements">R</abbr></span>
           <span><abbr title="Strategists/Researchers">S</abbr></span>
-          <span><abbr title="Insights">I</abbr></span>
-          <span><abbr title="Porject Manager">P</abbr></span>
         </div>
-        <h2>Prototyping</h2>
-        <p>User testing is essential to design decisions and should be happening throughout the project. This may be formal testing using the usability lab with paid participants or asking for feedback on prototypes based on user flow goals.</p> 
+        <h2>User Testing</h2>
+        <p>User testing is essential to design decisions and should be happening throughout the project. This may be formal testing using the usability lab with paid participants or asking for feedback on prototypes based on user flow goals. </p> 
         <p>To setup formal testing get  the help from someone on the Strategy/Research team.</p>
       </div>
       <div class="activity">
         <div class="discipline-icons sprint-phase">
           <span><abbr title="Designers">D</abbr></span>
-          <span><abbr title="Engineers">E</abbr></span>
-          <span><abbr title="Test Engineers">T</abbr></span>
-          <span><abbr title="Content Strategists">C</abbr></span>
-          <span><abbr title="Requirements">R</abbr></span>
-          <span><abbr title="Strategists/Researchers">S</abbr></span>
-          <span><abbr title="Insights">I</abbr></span>
           <span><abbr title="Porject Manager">P</abbr></span>
         </div>
         <h2>Client Review</h2>
@@ -306,13 +291,6 @@ the client.</p>
       <div class="activity">
         <div class="discipline-icons sprint-phase">
           <span><abbr title="Designers">D</abbr></span>
-          <span><abbr title="Engineers">E</abbr></span>
-          <span><abbr title="Test Engineers">T</abbr></span>
-          <span><abbr title="Content Strategists">C</abbr></span>
-          <span><abbr title="Requirements">R</abbr></span>
-          <span><abbr title="Strategists/Researchers">S</abbr></span>
-          <span><abbr title="Insights">I</abbr></span>
-          <span><abbr title="Porject Manager">P</abbr></span>
         </div>
         <h2>Design Team Feedback</h2>
         <p>Designers should be utilizing the group critique times to get constant feedback. Review things like color, type, spacing, layouts, sounds, animations.</p>
@@ -322,12 +300,7 @@ the client.</p>
         <div class="discipline-icons sprint-phase">
           <span><abbr title="Designers">D</abbr></span>
           <span><abbr title="Engineers">E</abbr></span>
-          <span><abbr title="Test Engineers">T</abbr></span>
           <span><abbr title="Content Strategists">C</abbr></span>
-          <span><abbr title="Requirements">R</abbr></span>
-          <span><abbr title="Strategists/Researchers">S</abbr></span>
-          <span><abbr title="Insights">I</abbr></span>
-          <span><abbr title="Porject Manager">P</abbr></span>
         </div>
         <h2>Design Review with Engineers</h2>
         <p>Short ad hoc reviews with 1 - 2 engineers. These should happen often throughout the project and shouldn’t need to be scheduled ahead of time. With the goals the user flows in mind the engineer and designer should critique designs.</p>
@@ -338,10 +311,15 @@ the client.</p>
           <span><abbr title="Engineers">E</abbr></span>
           <span><abbr title="Test Engineers">T</abbr></span>
           <span><abbr title="Content Strategists">C</abbr></span>
-          <span><abbr title="Requirements">R</abbr></span>
-          <span><abbr title="Strategists/Researchers">S</abbr></span>
-          <span><abbr title="Insights">I</abbr></span>
           <span><abbr title="Porject Manager">P</abbr></span>
+        </div>
+        <h2>Build Reviews</h2>
+        <p>Short ad hoc reviews with the lead engineer (optional) and the engineer who built the feature up for review. Designers should be reviewing the build to ensure it feels the way they intended. Also, checking for color, type, spacing, layouts, tap states, sounds, animations, content, voice, tone, and haptics. It’s best to review the build on a device, ask an Engineer to put the build on a device before meeting.</p>
+      </div>
+      <div class="activity">
+        <div class="discipline-icons sprint-phase">
+          <span><abbr title="Designers">D</abbr></span>
+          <span><abbr title="Requirements">R</abbr></span>
         </div>
         <h2>Requirements Reviews</h2>
         <p>Designers should be reviewing with the Technical Requirements Manager regularly to ensure their designs are meeting requirements.</p>
@@ -355,9 +333,6 @@ the client.</p>
           <span><abbr title="Test Engineers">T</abbr></span>
           <span><abbr title="Content Strategists">C</abbr></span>
           <span><abbr title="Requirements">R</abbr></span>
-          <span><abbr title="Strategists/Researchers">S</abbr></span>
-          <span><abbr title="Insights">I</abbr></span>
-          <span><abbr title="Porject Manager">P</abbr></span>
         </div>
         <h2>Content Modeling</h2>
         <p>Based on the designs and content, determine the structure of the content and how it should be consumed by the content management system (CMS) being implemented. This is an iterative process.</p>
@@ -365,13 +340,7 @@ the client.</p>
       <div class="activity">
         <div class="discipline-icons sprint-phase">
           <span><abbr title="Designers">D</abbr></span>
-          <span><abbr title="Engineers">E</abbr></span>
-          <span><abbr title="Test Engineers">T</abbr></span>
           <span><abbr title="Content Strategists">C</abbr></span>
-          <span><abbr title="Requirements">R</abbr></span>
-          <span><abbr title="Strategists/Researchers">S</abbr></span>
-          <span><abbr title="Insights">I</abbr></span>
-          <span><abbr title="Porject Manager">P</abbr></span>
         </div>
         <h2>Pre-demo Design Review</h2>
         <p>Product designers and content designers should meet prior to client demos to ensure that content appears and works as designed.</p>
