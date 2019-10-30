@@ -3,7 +3,7 @@
 ======================================== */
 :root {
   --darkBlue: #203548;
-  --teal: rgb(19, 224, 200);
+  --teal: rgb(8, 190, 166);
   --medBlue:  #1C77C3;
   --medDarkBlue:  #174B7C;
   --exLightBlue: #F5F8FA;
@@ -102,14 +102,14 @@ section {
   right: 20px;
   top: 20px;
   text-decoration: none;
-  background-color: var(--medBlue);
+  background-color: var(--teal);
   color: white;
   padding: 8px 16px;
   border-radius: 30px;
 }
 
 .design-goals-btn:hover {
-  background-color: var(--medDarkBlue);
+  background-color: var(--medBlue);
 }
 
 .team-members-wrapper {
@@ -219,11 +219,37 @@ hr {
 
 .discipline-icons span {
   background: white;
-  margin-right: 6px;
   border-radius: 100px;
   display: inline-block;
   width: 20px;
   height: 20px;
+}
+
+.discipline-icons span:not(:last-child) {
+  margin-right: 6px;
+}
+
+
+
+abbr {
+  text-decoration: none;
+}
+
+button {
+  transition: all .5s ease;
+  background: var(--teal);
+  border-radius: 2em;
+  color: white;
+  font-size: .8em;
+  padding: .8em 1.5em;
+  font-weight: bold;
+  border: none;
+  padding-bottom:.9em;
+}
+
+button:hover {
+  background: var(--medBlue);
+  cursor: pointer;
 }
 
 /* ===================================== 
@@ -268,7 +294,7 @@ hr {
     max-width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     align-items: start;
     grid-gap: 2em;
   }
